@@ -41,7 +41,6 @@ int main(void)
 			addstr(str);
 			i++;
 		}
-		refresh();
 
 		//ページの管理
 		page = page==10 ? 1 : page+1;
