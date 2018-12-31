@@ -5,7 +5,7 @@
 #include <fstream>
 #include <string>
 
-#define PAGE 10
+#define MAX_PAGE 10
 
 int main(void)
 {
@@ -43,7 +43,7 @@ int main(void)
 		}
 
 		//ページの管理
-		page = page==10 ? 1 : page+1;
+		page = page==MAX_PAGE ? 1 : page+1;
 
 		ifs.close();
 		timeout(500);
